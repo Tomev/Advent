@@ -28,6 +28,6 @@ while not was_first_double_frequency_found:
         file_read = open("input.txt", "r")
         line = file_read.readline()
 
-print(f'First dobule frequency found was {first_double_frequency}.')
+print(f'First double frequency found was {first_double_frequency}.')
 
 
