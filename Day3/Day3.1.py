@@ -26,3 +26,4 @@ for i in range(0, len(claims)):
     sq_inches_already_claimed = sq_inches_already_claimed | set(sq_inches_claimed)
 
 print(f'Square inches within multiple claims: {len(sq_inches_claimed_multiple_times)}.')
+
