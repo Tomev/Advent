@@ -1,22 +1,7 @@
 from datetime import datetime
-
-
-class ElfGuard:
-    id = -1
-    time_asleep = 0
-
-    def __init__(self, guard_id):
-        self.id = guard_id
-
-    def __str__(self):
-        return f'id: {self.id}, sleep time: {self.time_asleep}.'
-
-    def __ref__(self):
-        return self.__str__()
-
+from Day4.ElfGuard import ElfGuard
 
 file_read = open("input.txt", "r")
-#file_read = open("test.txt", "r")
 
 line = file_read.readline()
 
@@ -36,15 +21,12 @@ while line:
 
     line = file_read.readline()
 
-
 elf_guards_data = dict()
 current_guard_id = -1
 
 sleep_start = 0
 
 for key in sorted(times_and_events):
-
-    # print(f'{str(key)}: {times_and_events[key]}')
 
     if times_and_events[key].__contains__('#'):
         current_guard_id = int(times_and_events[key].split('#')[1].split(' ')[0])
@@ -83,8 +65,6 @@ for key in sorted(times_and_events):
 
     if current_guard_id != most_sleepy_guard_id:
         continue
-
-    # print(f'{str(key)}: {times_and_events[key]}')
 
     if times_and_events[key].__contains__('falls'):
         sleep_start = key.minute
