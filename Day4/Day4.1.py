@@ -69,7 +69,7 @@ for key in elf_guards_data:
 
 print(f'Most sleepy guard is guard #{most_sleepy_guard_id} as he slept {most_time_asleep} minutes.')
 
-# Initialize minutes during elf was asleep
+# Initialize minutes during which elf was asleep
 times_asleep_during_minute = dict()
 
 for i in range(0, 60):
