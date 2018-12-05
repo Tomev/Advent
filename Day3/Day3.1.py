@@ -1,4 +1,4 @@
-from .Claim import Claim
+from Day3.Claim import Claim
 
 file_read = open("input.txt", "r")
 
