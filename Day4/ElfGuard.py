@@ -8,5 +8,5 @@ class ElfGuard:
     def __str__(self):
         return f'id: {self.id}, sleep time: {self.time_asleep}.'
 
-    def __ref__(self):
+    def __repr__(self):
         return self.__str__()

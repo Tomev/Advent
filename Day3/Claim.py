@@ -16,7 +16,7 @@ class Claim:
     def __str__(self):
         return f'Id: {self.id}, tl: {self.top_left_corner}, br: {self.bot_right_corner}.'
 
-    def __ref__(self):
+    def __repr__(self):
         return self.__str__()
 
     def list_of_occupied_sq_inches(self):
