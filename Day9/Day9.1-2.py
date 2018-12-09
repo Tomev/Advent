@@ -57,7 +57,9 @@ assert play_the_game(21, 6111) == 54718, '4th assertion failed'
 assert play_the_game(30, 5807) == 37305, '5th assertion failed'
 
 print(f'Winning elf score is {play_the_game(PLAYERS_NUM, LAST_MARBLE_SCORE)}.')
-
+# Takes so much time
+print(f'New winning elf score would be {play_the_game(PLAYERS_NUM, LAST_MARBLE_SCORE * 100)} if the last marble score '
+      f'was 100 times larger.')
 
 
 
