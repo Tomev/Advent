@@ -19,7 +19,6 @@ while line:
     line = file_read.readline()
 
 iterations_num = 20
-iterations_num = 50000000000  # Puzzle part 2
 plants_num = 0
 start_offset = 0
 
