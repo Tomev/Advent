@@ -2,7 +2,6 @@ def count_score_after_n_recipes(n):
     scores = [3, 7]
     elves_positions = [0, 1]
 
-    #for i in range(0, n):
     while len(scores) < n + 10:
         new_choco_score = 0
 
